@@ -1,0 +1,16 @@
+<div class="container">
+    <!-- Interpolation -->
+    <h1>{{ title }}</h1>
+  
+    <!-- Property Binding -->
+    <img [src]="imageUrl" [alt]="title" *ngIf="isImageVisible" />
+  
+    <!-- Event Binding -->
+    <button (click)="handleClick()">{{ buttonText }}</button>
+  
+    <!-- Two-way Binding -->
+    <input [(ngModel)]="userName" placeholder="Enter your name" />
+    <p>Your name is: {{ userName }}</p>
+
+  </div>
+  
